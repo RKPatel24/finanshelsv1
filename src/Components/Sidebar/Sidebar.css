@@ -1,0 +1,92 @@
+/* Sidebar.css */
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f5f7; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    font-family: 'Arial', sans-serif; /* Replace with your preferred font */
+  }
+  
+  .sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .sidebar-logo img {
+    max-height: 50px; /* Adjust based on your logo's size */
+  }
+  
+  .nav-section {
+    margin-bottom: 30px;
+  }
+  
+  .nav-section h4 {
+    color: #666; /* Grey text for section titles */
+    padding: 20px; /* Consistent padding for section titles */
+    font-size: 16px; /* Slightly larger font size for titles */
+    /* border-bottom: 1px solid #ddd; Separator for the title */
+    margin-bottom: 10px; /* Spacing after the title */
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    color: #333; /* Dark grey/black text for links */
+    padding: 12px 20px; /* Spacing for link items */
+    text-decoration: none; /* No underlines on links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth background and color transition */
+    border-left: 4px solid transparent; /* Placeholder for the active state border */
+  }
+  
+  .nav-icon {
+    margin-right: 10px; /* Spacing between icon and text */
+    font-size: 24px; /* Icon size, adjust as needed */
+  }
+  
+  .nav-link:hover {
+    background-color: white; /* White background on hover */
+    color: #5D3DBD; /* Purple text on hover for contrast */
+  }
+  
+  .nav-link.active {
+    background-color: #5D3DBD; /* Purple background for active link */
+    color: white; /* White text for active link */
+    border-left: 4px solid white; /* White border for active state */
+    border-radius: 20px;
+  }
+  
+  /* Ensures that the active link does not change on hover */
+  .nav-link.active:hover {
+    background-color: #5D3DBD;
+    color: white;
+    border-left: 4px solid white;
+  }
+  
+  .nav-section.bottom-nav {
+    margin-top: auto; /* Push to the bottom */
+    padding-top: 20px; /* Spacing from the rest of the content */
+  }
+  
+  .nav-section.bottom-nav .nav-link {
+    background-color: transparent; /* No background for non-active links */
+    border: none; /* No borders for non-active links */
+  }
+  
+  .nav-section.bottom-nav .nav-link.active {
+    background-color: #5D3DBD; /* Purple background for active link */
+    color: white; /* White text for active link */
+  }
+  
+  .nav-section.bottom-nav .nav-link.active, .nav-section.bottom-nav .nav-link:hover {
+    border-left: 4px solid white; /* White border for active/hover state */
+  }
+  
+  /* Logout link, in case you want it styled differently */
+  .nav-link.logout {
+    color: #333; /* Or any other color you prefer for logout */
+  }
+  
